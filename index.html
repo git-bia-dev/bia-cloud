@@ -34,7 +34,7 @@
             margin-bottom: 30px;
         }
         table {
-            width: 50%;
+            width: 100%;
             margin: 20px auto;
             border-collapse: collapse;
             table-layout: fixed;
@@ -49,9 +49,10 @@
             color: #03293a;
         }
         th:nth-child(1) { width: 20%; }
-        th:nth-child(2) { width: 20%; }
-        th:nth-child(3) { width: 40%; }
-        th:nth-child(4) { width: 20%; }
+        th:nth-child(2) { width: 10%; }
+        th:nth-child(3) { width: 20%; }
+        th:nth-child(4) { width: 10%; }
+        th:nth-child(5) { width: 30%; }
     </style>
 </head>
 <body>
@@ -68,7 +69,7 @@
         <p id="status">Loading...</p>
         <button onclick="refreshStatus()">Refresh Status</button>
 
-        <h3>Future Maintenance Tasks</h3>
+        <h3>Maintenance Tasks</h3>
         <table>
             <tr>
                 <th>Date Time</th>
@@ -84,31 +85,22 @@
                 <td>1h</td>
                 <td>cloudapplications.com.ar</td>
             </tr>
-        </table>
-
-        <h3>History of Maintenance Tasks</h3>
-        <table>
-            <tr>
-                <th>Date Time</th>
-                <th>Owner</th>
-                <th>Details</th>
-                <th>Duration</th>
-                <th>Services affected</th>
-            </tr>
             <tr>
                 <td>2023-05-12 12 pm</td>
                 <td>IT</td>
                 <td>Maintenance</td>
                 <td>1h</td>
                 <td>cloudapplications.com.ar</td>
-                
             </tr>
         </table>
 
         <p> Maintenance tasks list las update: 12-05-2023 13hs</p>
         <img src="https://static.wixstatic.com/media/b23329_10ecb85fef31475986e3af5e527d0ba9~mv2_d_1430_1205_s_2.png/v1/fill/w_560,h_470,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard.png" alt="Kepion Logo" />
 
-      
+        <div class="row">
+            <div class="col-12 col-md-8 text-md-center">Copyright © 2023 BI Applications. All rights reserved.</div>
+        </div>
+
     </main>
     <script>
         function refreshStatus() {
