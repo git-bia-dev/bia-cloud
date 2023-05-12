@@ -8,28 +8,44 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #03293a;
+            color: #fff;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #03293a;
             padding: 20px;
         }
         header h1 {
-            color: #fff;
+            color: #ffca3d;
             margin: 0;
         }
         main {
             padding: 40px;
         }
-        h2 {
+        h2, h3 {
             font-size: 24px;
+            color: #ffca3d;
             margin-bottom: 10px;
         }
         p {
             font-size: 18px;
             margin-bottom: 30px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #fff;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ffca3d;
+            color: #03293a;
         }
     </style>
 </head>
@@ -41,6 +57,41 @@
         <h2>Current Status:</h2>
         <p id="status">Loading...</p>
         <button onclick="refreshStatus()">Refresh Status</button>
+
+        <h3>Disclaimer: The following services will be affected</h3>
+        <p>Service 1</p>
+
+        <h3>Future Maintenance Tasks</h3>
+        <table>
+            <tr>
+                <th>Date Time</th>
+                <th>Owner</th>
+                <th>Details</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>2023-05-15 09am</td>
+                <td>IT</td>
+                <td>Maintenance</td>
+                <td>1h</td>
+            </tr>
+        </table>
+
+        <h3>History of Maintenance Tasks</h3>
+        <table>
+            <tr>
+                <th>Date Time</th>
+                <th>Owner</th>
+                <th>Details</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>2023-05-12 12pm</td>
+                <td>IT</td>
+                <td>Maintenance</td>
+                <td>1h</td>
+            </tr>
+        </table>
     </main>
     <script>
         function refreshStatus() {
