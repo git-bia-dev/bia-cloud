@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepion Applications Cloud SaaS Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+        }
+        header h1 {
+            color: #fff;
+            margin: 0;
+        }
+        main {
+            padding: 40px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kepion Applications Cloud SaaS Status</h1>
+    </header>
+    <main>
+        <h2>Current Status:</h2>
+        <p id="status">Loading...</p>
+        <button onclick="refreshStatus()">Refresh Status</button>
+    </main>
+    <script>
+        function refreshStatus() {
+            // Replace this with an API call or other method to fetch the actual status of the service
+            document.getElementById('status').innerHTML = 'Operational'; // Example status text
+        }
+        refreshStatus();
+    </script>
+</body>
+</html>
