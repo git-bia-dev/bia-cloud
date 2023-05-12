@@ -34,9 +34,10 @@
             margin-bottom: 30px;
         }
         table {
-            width: 80%;
+            width: 50%;
             margin: 20px auto;
             border-collapse: collapse;
+            table-layout: fixed;
         }
         th, td {
             border: 1px solid #fff;
@@ -47,6 +48,10 @@
             background-color: #ffca3d;
             color: #03293a;
         }
+        th:nth-child(1) { width: 20%; }
+        th:nth-child(2) { width: 20%; }
+        th:nth-child(3) { width: 40%; }
+        th:nth-child(4) { width: 20%; }
     </style>
 </head>
 <body>
