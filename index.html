@@ -8,39 +8,101 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #03293a;
+            color: #fff;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #03293a;
             padding: 20px;
         }
         header h1 {
-            color: #fff;
+            color: #ffca3d;
             margin: 0;
         }
         main {
             padding: 40px;
         }
-        h2 {
+        h2, h3 {
             font-size: 24px;
+            color: #ffca3d;
             margin-bottom: 10px;
         }
         p {
             font-size: 18px;
             margin-bottom: 30px;
         }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #fff;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ffca3d;
+            color: #03293a;
+        }
     </style>
 </head>
 <body>
+
+    
     <header>
-        <h1>Kepion Applications Cloud SaaS Status</h1>
+        
+        
+        <img src="https://static.wixstatic.com/media/b23329_4a47787f4a3e4976abb855aa9eb9b9ef~mv2.png/v1/fill/w_226,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo-bia.png" alt="Kepion Logo" />    
+    </p> <img src="https://media.trustradius.com/product-logos/cD/r3/46AVMSZR3LXW-180x180.PNG" alt="Kepion Logo" />
     </header>
     <main>
         <h2>Current Status:</h2>
         <p id="status">Loading...</p>
         <button onclick="refreshStatus()">Refresh Status</button>
+
+        <h3>Future Maintenance Tasks</h3>
+        <table>
+            <tr>
+                <th>Date Time</th>
+                <th>Owner</th>
+                <th>Details</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>2023-05-15 09 am</td>
+                <td>IT</td>
+                <td>Maintenance</td>
+                <td>1h</td>
+            </tr>
+        </table>
+
+
+        <h3>The following services will be affected</h3>
+        <p>cloudapplications.com.ar</p>
+
+
+        <h3>History of Maintenance Tasks</h3>
+        <table>
+            <tr>
+                <th>Date Time</th>
+                <th>Owner</th>
+                <th>Details</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>2023-05-12 12 pm</td>
+                <td>IT</td>
+                <td>Maintenance</td>
+                <td>1h</td>
+            </tr>
+        </table>
+
+        <img src="https://static.wixstatic.com/media/b23329_10ecb85fef31475986e3af5e527d0ba9~mv2_d_1430_1205_s_2.png/v1/fill/w_560,h_470,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard.png" alt="Kepion Logo" />
+
+      
     </main>
     <script>
         function refreshStatus() {
